@@ -1,0 +1,181 @@
+{
+  "name": {
+    "first": "Aryan",
+    "last": "Patade",
+    "full": "Aryan Patade"
+  },
+  "email": "aryanpatade8@gmail.com",
+  "tagline": "Building AI-driven systems, data platforms, and space-tech inspired applications.",
+  "description": "Computer Engineering student focused on AI, Data Engineering, and scalable software systems. Passionate about building intelligent applications, predictive analytics platforms, and space-tech inspired solutions using modern technologies.",
+  "roles": {
+    "short": "AI & Data Engineer",
+    "detailed": "AI Engineer · Data Engineer · Backend Developer · System Designer"
+  },
+  "location": {
+    "based": "Pune, India",
+    "availability": "Worldwide"
+  },
+  "available": true,
+  "bio": "Computer Engineering student with strong foundations in Artificial Intelligence, Machine Learning, Data Engineering, and Backend Development. Experienced in building predictive analytics systems, AI-powered platforms, and scalable REST APIs using Python, FastAPI, and modern data tools. Skilled in data preprocessing, EDA, workflow automation, and developing end-to-end machine learning systems. Passionate about space-tech, autonomous systems, and building intelligent solutions inspired by real-world scientific challenges like Mars rover navigation and mission risk analysis.",
+  "stats": [
+    { "value": "2+",  "label": "Years Practical Experience" },
+    { "value": "5+", "label": "Major Projects" },
+    { "value": "2",   "label": "Internships" }
+  ],
+  "skills": [
+    "AI & Machine Learning",
+    "Data Engineering",
+    "Predictive Modeling",
+    "Data Analysis & EDA",
+    "Python Development",
+    "FastAPI",
+    "REST API Development",
+    "Backend Engineering",
+    "Power BI & Data Visualization",
+    "SQL & Data Processing",
+    "System Design (Basics)",
+    "DSA & Problem Solving",
+    "MongoDB",
+    "Node.js & Express",
+    "TensorFlow & Scikit-Learn",
+    "OpenCV",
+    "Workflow Automation",
+    "Git & GitHub"
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "role": "AI Research Intern",
+      "company": "PVG’s COETM",
+      "companyShort": "PVG COETM",
+      "type": "Internship",
+      "location": "Pune, India",
+      "period": "Jan 2026",
+      "periodEnd": "Feb 2026",
+      "bullets": [
+        "Researched autonomous AI navigation systems for Martian rover exploration, focusing on path planning and obstacle avoidance.",
+        "Studied and implemented algorithms like A* and heuristic-based search for terrain-aware navigation.",
+        "Explored simulation models integrating AI, robotics, and space science concepts.",
+        "Documented research findings to improve analytical thinking and scientific communication."
+      ],
+      "desc": "Worked on AI-based autonomous navigation systems inspired by Mars rover missions, focusing on path planning, terrain analysis, and simulation-based learning.",
+      "tech": ["Python", "A*", "Heuristic Algorithms", "AI Navigation", "Simulation Models"]
+    },
+    {
+      "id": 2,
+      "role": "Power BI Intern",
+      "company": "Saiket Systems",
+      "companyShort": "SAIKET SYSTEMS",
+      "type": "Internship",
+      "location": "Pune, India",
+      "period": "Sept 2025",
+      "periodEnd": "Oct 2025",
+      "bullets": [
+        "Built a customer churn prediction model using Random Forest with ~88% accuracy and strong ROC-AUC performance.",
+        "Designed interactive Power BI dashboards to visualize customer risk segmentation and key churn drivers.",
+        "Automated data preprocessing and reporting workflows, improving efficiency by ~30%.",
+        "Enabled data-driven decision-making through clear analytical insights and visualization."
+      ],
+      "desc": "Worked on predictive analytics and business intelligence, combining machine learning with Power BI dashboards for real-world decision-making.",
+      "tech": ["Power BI", "Python", "Pandas", "NumPy", "Scikit-Learn", "Data Visualization"]
+    }
+  ],
+
+  "projects": [
+    {
+      "id": 1,
+      "title": "GravitX",
+      "subtitle": "Space Mission Risk Analyzer",
+      "type": "AI + Full Stack",
+      "link": "https://space-mission-risk-predictor.vercel.app",
+      "github": "https://github.com/Aryan-123-app/space-mission-risk-predictor",
+      "image": "/assets/project-gravitx.png",
+      "tech": ["Python", "Scikit-Learn", "XGBoost", "FastAPI", "React.js", "NumPy", "Pandas"],
+      "desc": "Developed an AI-powered predictive analytics platform to estimate space mission success probability using historical launch data, environmental conditions, and mission parameters. Built ML models (Random Forest ~88%, XGBoost ~89%), implemented full data science lifecycle (EDA, feature engineering, training), and deployed using FastAPI with an interactive React frontend."
+    },
+    {
+      "id": 2,
+      "title": "Kuberly",
+      "subtitle": "Financial Ledger Backend API",
+      "type": "Backend System",
+      "link": "https://kuberly-backend-3.onrender.com/",
+      "github": "https://github.com/Aryan-123-app/kuberly-backend",
+      "image": "/assets/project-kuberly.jpeg",
+      "tech": ["Node.js", "Express.js", "MongoDB", "JWT", "bcrypt", "Nodemailer"],
+      "desc": "Developed a scalable backend API for a personal finance management system with secure JWT authentication, encrypted password handling, and automated email notifications. Designed optimized MongoDB schemas and REST APIs for efficient transaction processing."
+    },
+    {
+      "id": 3,
+      "title": "Satellite Orbit Simulation",
+      "subtitle": "Physics-Based Simulation Dashboard",
+      "type": "Simulation",
+      "link": "",
+      "github": "https://github.com/Aryan-123-app/Satellite-Orbit-Simulation",
+      "image": "/assets/project-orbit.jpeg",
+      "tech": ["Python", "NumPy", "Matplotlib"],
+      "desc": "Built a physics-based simulation system to model satellite motion and orbital mechanics. Visualized 3D trajectories, velocity changes, and altitude variations using numerical analysis and mathematical modeling."
+    },
+    {
+      "id": 4,
+      "title": "Fitness Analytics Dashboard",
+      "subtitle": "Business Intelligence System",
+      "type": "Data Analytics",
+      "link": "",
+      "github": "https://github.com/Aryan-123-app/Fitness-Smart-Analytics-Dashboard",
+      "image": "/assets/project-fitness.png",
+      "tech": ["Power BI", "Excel", "DAX"],
+      "desc": "Developed an interactive dashboard to analyze fitness business performance including KPIs like profitability, retention, and trainer efficiency using Power BI and DAX queries."
+    },
+    {
+      "id": 5,
+      "title": "Mumbai Housing Analytics",
+      "subtitle": "Data Science Project",
+      "type": "Machine Learning",
+      "link": "",
+      "github": "https://github.com/Aryan-123-app/Mini-Project---Mumbai-Housing-Management",
+      "image": "/assets/project-housing.jpeg",
+      "tech": ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+      "desc": "Analyzed real estate data to identify pricing trends and market patterns using EDA, statistical modeling, and visualization techniques to generate predictive insights."
+    }
+  ],
+  "publications": [
+    {
+      "id": 1,
+      "title": "Designing AI-Based Navigation Systems for Mars Rovers",
+      "platform": "Medium",
+      "year": "2026",
+      "link": "",
+      "desc": "Explores the fundamentals of autonomous navigation systems used in Mars rover missions. Covers path planning algorithms like A*, terrain analysis, and how AI enables decision-making in unknown and harsh extraterrestrial environments."
+    },
+    {
+      "id": 2,
+      "title": "From Data to Decisions: Building a Customer Churn Prediction System",
+      "platform": "Medium",
+      "year": "2025",
+      "link": "",
+      "desc": "End-to-end breakdown of a machine learning pipeline for churn prediction using real-world datasets. Covers data preprocessing, feature engineering, Random Forest modeling, and translating predictions into actionable business insights."
+    },
+    {
+      "id": 3,
+      "title": "Building Scalable Backend Systems with Node.js: From APIs to Architecture",
+      "platform": "Medium",
+      "year": "2025",
+      "link": "",
+      "desc": "Deep dive into backend system design using Node.js, including REST API architecture, authentication with JWT, database optimization, and designing scalable systems for real-world applications."
+    },
+    {
+      "id": 4,
+      "title": "Predicting Space Mission Success with Machine Learning",
+      "platform": "Medium",
+      "year": "2026",
+      "link": "",
+      "desc": "Explains how machine learning models can be used to estimate space mission success probabilities using historical launch data. Covers EDA, feature selection, model comparison (Random Forest vs XGBoost), and deployment considerations."
+    }
+  ],
+  "socials": [
+    { "label": "GitHub",    "href": "https://github.com/Aryan-123-app" },
+    { "label": "LinkedIn",  "href": "https://www.linkedin.com/in/aryan-patade-a277451a9" },
+    { "label": "Medium",    "href": "https://medium.com/@aryanpatade8" },
+    { "label": "Instagram", "href": "https://www.instagram.com/therealaryan.45/" }
+  ]
+}

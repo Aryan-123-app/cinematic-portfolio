@@ -1,0 +1,22 @@
+{
+"site": {
+"tagline": "AI Engineer • Full Stack Developer • Building the Future"
+},
+"hero": {
+"taglineHighlight": "intelligent systems",
+"freelanceNote": "Open to impactful freelance projects & full-time roles in AI, Space Tech, and Scalable Systems.",
+"availableLabel": "Open to opportunities",
+"pills": ["AI Engineer", "Full Stack Developer", "Space Tech Enthusiast", "Scalable Systems"],
+"specialistStat": { "value": "AI + Systems", "label": "Focused Expertise" }
+},
+"interstitial": {
+"availabilityLabel": "Current Status",
+"basedInLabel": "Location",
+"statLabels": ["Years\nbuilding", "Projects\nengineered", "Teams\ncollaborated"]
+},
+"footer": {
+"eyebrow": "Let’s build something impactful",
+"ctaLines": ["Designing intelligent", "digital systems", "that scale"],
+"ctaAccent": "beyond limits."
+  }
+}
