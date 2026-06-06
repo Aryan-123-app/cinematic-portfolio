@@ -158,3 +158,7 @@
 .mobileMailLink:hover {
   color: var(--accent);
 }
+
+.menuOpenBtn {
+  color: #ffffff !important;
+}
