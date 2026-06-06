@@ -72,7 +72,10 @@ main { scrollbar-width: none; -ms-overflow-style: none; }
 
 @media (max-width: 767px) {
   :root {
-    --hero-name-size: clamp(3rem, 10vw, 5rem);
+    --hero-name-size: clamp(2.4rem, 9.5vw, 3.8rem);
+    --text-body: clamp(0.95rem, 3.2vw, 1.2rem);
+    --text-small: clamp(0.8rem, 2.6vw, 0.95rem);
+    --hero-role-size: clamp(0.95rem, 3.2vw, 1.2rem);
   }
 
   /* Override inline 100vh - Chrome mobile toolbar hides bottom content */

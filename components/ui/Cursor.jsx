@@ -9,7 +9,7 @@ export default function Cursor() {
   const rafRef    = useRef(null);
 
   useEffect(() => {
-    if (window.matchMedia('(hover: none)').matches) {
+    if (window.matchMedia('(hover: none), (max-width: 767px)').matches) {
       if (cursorRef.current) cursorRef.current.style.display = 'none';
       return;
     }
@@ -45,7 +45,7 @@ export default function Cursor() {
   return (
     <div
       ref={cursorRef}
-      className="fixed top-0 left-0 w-3 h-3 rounded-full pointer-events-none z-9999 -translate-x-1/2 -translate-y-1/2 will-change-transform"
+      className="hidden md:block fixed top-0 left-0 w-3 h-3 rounded-full pointer-events-none z-9999 -translate-x-1/2 -translate-y-1/2 will-change-transform"
       style={{
         background: "var(--accent)",
         boxShadow: "0 0 16px var(--accent)",

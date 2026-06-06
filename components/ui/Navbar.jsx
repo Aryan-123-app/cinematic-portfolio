@@ -132,7 +132,7 @@ export default function Navbar() {
           onClick={() => setMenuOpen(o => !o)}
           aria-label="Toggle menu"
         >
-          {menuOpen ? <FaTimes size={18} /> : <FaBars size={18} />}
+          {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
       </header>
 

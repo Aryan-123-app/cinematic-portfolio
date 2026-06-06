@@ -109,7 +109,11 @@
 }
 
 @media (max-width: 767px) {
-  .hamburger { display: flex; }
+  .hamburger {
+    display: flex;
+    margin-left: auto;
+    padding: 0.5rem;
+  }
   .emailBtn  { display: none; }
 }
 

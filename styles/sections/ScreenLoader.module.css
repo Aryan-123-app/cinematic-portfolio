@@ -215,6 +215,16 @@
   transform: translate3d(0,0,0);
 }
 
+@media (max-width: 767px) {
+  .startBtn {
+    font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+    padding: 0.75rem 2rem;
+  }
+  .monogram {
+    font-size: clamp(0.68rem, 2.2vw, 0.82rem);
+  }
+}
+
 @media (max-width: 480px) {
   .monogram {
     letter-spacing: 0.2em;
@@ -222,6 +232,6 @@
 
   .startBtn {
     padding: 0.85rem 2.25rem;
-    font-size: 0.68rem;
+    font-size: 0.78rem;
   }
 }

@@ -34,6 +34,7 @@
   font-family: var(--font-geist-mono), monospace;
   font-size: 0.72rem;
   letter-spacing: 0.06em;
+  white-space: nowrap;
 }
 
 .cCur { color: #fff; font-weight: 700; }
@@ -252,6 +253,7 @@
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 5;
+  line-clamp: 5;
   -webkit-box-orient: vertical;
 }
 
@@ -303,12 +305,36 @@
   .slideContent {
     grid-template-columns: 1fr;
     align-items: flex-end;
-    gap: 1rem;
+    gap: 1.4rem;
+    padding-bottom: clamp(8rem, 14vh, 11rem);
+    padding-left: clamp(1.2rem, 4vw, 2rem);
+    padding-right: clamp(1.2rem, 4vw, 2rem);
   }
 
   .slideRight { display: none; }
-  .title      { font-size: 1.8rem; }
-  .slideNum   { font-size: 5rem; bottom: 5rem; }
+  
+  .typeTag {
+    font-size: clamp(0.9rem, 3vw, 1.05rem);
+  }
+
+  .title {
+    font-size: clamp(2.4rem, 7.5vw, 3.2rem);
+  }
+
+  .subtitle {
+    font-size: clamp(0.9rem, 3.2vw, 1.15rem);
+  }
+
+  .liveBtn,
+  .githubBtn {
+    font-size: clamp(0.82rem, 2.5vw, 0.9rem);
+    padding: 0.75rem 1.4rem;
+  }
+
+  .slideNum {
+    font-size: 5rem;
+    bottom: 5rem;
+  }
 }
 
 /* ── Mobile landscape / small tablet ────────── */

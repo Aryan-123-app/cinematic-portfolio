@@ -211,10 +211,6 @@
 }
 
 @media (max-width: 767px) {
-  .content {
-    justify-content: start;
-  }
-
   .section {
     grid-template-columns: 1fr;
     grid-template-rows: 60svh 1fr;
@@ -251,13 +247,15 @@
   }
 
   .content {
+    display: block;
+    width: 100%;
     padding: 1rem 1.25rem 0.75rem;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
 
   .bio {
-    font-size: clamp(0.72rem, 3vw, 0.95rem);
+    font-size: clamp(1rem, 3.6vw, 1.25rem);
   }
 
   .marqueeWrap {
@@ -265,12 +263,12 @@
   }
 
   .whoLabel {
-    font-size: 0.8rem;
+    font-size: clamp(0.95rem, 3.2vw, 1.1rem);
     margin-bottom: 0.3rem;
   }
 
   .signature {
-    font-size: 3rem;
+    font-size: 3.5rem;
     bottom: -1rem;
     right: -0.5rem;
   }

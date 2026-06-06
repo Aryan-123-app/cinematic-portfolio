@@ -15,12 +15,14 @@ function scrollNext() {
 }
 
 export default function VideoIntro() {
-  const videoRef    = useRef(null)
-  const greetRef    = useRef(null)
-  const nameRef     = useRef(null)
-  const roleRef     = useRef(null)
-  const scrollRef   = useRef(null)
-  const hintRef     = useRef(null)
+  const videoRef      = useRef(null)
+  const bgVideoRef    = useRef(null)
+  const greetRef      = useRef(null)
+  const nameRef       = useRef(null)
+  const roleRef       = useRef(null)
+  const scrollRef     = useRef(null)
+  const hintRef       = useRef(null)
+  const userPausedRef = useRef(false)
 
   // muted state drives icon only - DOM muted property is controlled exclusively via ref
   const [muted,    setMuted]    = useState(true)
@@ -70,7 +72,13 @@ export default function VideoIntro() {
     function onAnimationDone() {
       const v = videoRef.current
       if (!v) return
-      v.play().catch(() => {})
+      const scroller = document.querySelector('main')
+      const inView = !scroller || scroller.scrollTop < window.innerHeight * 0.45
+      if (inView && !userPausedRef.current) {
+        v.play().catch(() => {})
+        const bgV = bgVideoRef.current
+        if (bgV) bgV.play().catch(() => {})
+      }
     }
     window.addEventListener('loader-animation-done', onAnimationDone)
     return () => window.removeEventListener('loader-animation-done', onAnimationDone)
@@ -83,6 +91,33 @@ export default function VideoIntro() {
     return () => clearTimeout(id)
   }, [showHint])
 
+  // Scroll event listener to auto pause/play based on scroll position
+  useEffect(() => {
+    const scroller = document.querySelector('main')
+    if (!scroller) return
+
+    function onScroll() {
+      const v = videoRef.current
+      const bgV = bgVideoRef.current
+      if (!v) return
+
+      const outOfView = scroller.scrollTop > window.innerHeight * 0.45
+
+      if (outOfView) {
+        if (!v.paused) v.pause()
+        if (bgV && !bgV.paused) bgV.pause()
+      } else {
+        if (!userPausedRef.current) {
+          if (v.paused) v.play().catch(() => {})
+          if (bgV && bgV.paused) bgV.play().catch(() => {})
+        }
+      }
+    }
+
+    scroller.addEventListener('scroll', onScroll, { passive: true })
+    return () => scroller.removeEventListener('scroll', onScroll)
+  }, [])
+
   function dismissHint() {
     if (!hintRef.current) return
     gsap.to(hintRef.current, {
@@ -94,8 +129,15 @@ export default function VideoIntro() {
   function togglePlay() {
     const v = videoRef.current
     if (!v) return
-    if (playing) { v.pause(); setPlaying(false) }
-    else         { v.play();  setPlaying(true)  }
+    if (playing) {
+      v.pause()
+      setPlaying(false)
+      userPausedRef.current = true
+    } else {
+      v.play()
+      setPlaying(true)
+      userPausedRef.current = false
+    }
   }
 
   function toggleMute() {
@@ -119,6 +161,7 @@ export default function VideoIntro() {
 
       {/* 1 - Blurred ambient background */}
       <video
+        ref={bgVideoRef}
         src="/assets/about-me.mp4"
         autoPlay muted playsInline
         aria-hidden="true"
