@@ -139,39 +139,39 @@
     }
   ],
   "publications": [
-    {
-      "id": 1,
-      "title": "Designing AI-Based Navigation Systems for Mars Rovers",
-      "platform": "Medium",
-      "year": "2026",
-      "link": "",
-      "desc": "Explores the fundamentals of autonomous navigation systems used in Mars rover missions. Covers path planning algorithms like A*, terrain analysis, and how AI enables decision-making in unknown and harsh extraterrestrial environments."
-    },
-    {
-      "id": 2,
-      "title": "From Data to Decisions: Building a Customer Churn Prediction System",
-      "platform": "Medium",
-      "year": "2025",
-      "link": "",
-      "desc": "End-to-end breakdown of a machine learning pipeline for churn prediction using real-world datasets. Covers data preprocessing, feature engineering, Random Forest modeling, and translating predictions into actionable business insights."
-    },
-    {
-      "id": 3,
-      "title": "Building Scalable Backend Systems with Node.js: From APIs to Architecture",
-      "platform": "Medium",
-      "year": "2025",
-      "link": "",
-      "desc": "Deep dive into backend system design using Node.js, including REST API architecture, authentication with JWT, database optimization, and designing scalable systems for real-world applications."
-    },
-    {
-      "id": 4,
-      "title": "Predicting Space Mission Success with Machine Learning",
-      "platform": "Medium",
-      "year": "2026",
-      "link": "",
-      "desc": "Explains how machine learning models can be used to estimate space mission success probabilities using historical launch data. Covers EDA, feature selection, model comparison (Random Forest vs XGBoost), and deployment considerations."
-    }
-  ],
+  {
+    "id": 1,
+    "title": "Before ChatGPT: The Untold Story of How AI Quietly Evolved Over Decades",
+    "platform": "Medium",
+    "year": "2026",
+    "link": "https://medium.com/@aryanpatade8/before-chatgpt-the-untold-story-of-how-ai-quietly-evolved-over-decades-48fbfee95968",
+    "desc": "A storytelling-driven deep dive into the evolution of Artificial Intelligence—from early theoretical foundations to modern breakthroughs like ChatGPT. Explores how decades of research in machine learning and deep learning quietly shaped today’s AI revolution."
+  },
+  {
+    "id": 2,
+    "title": "The Hidden Carbon Cost of the Cloud: Why Green Computing is the Future of Scalable Systems",
+    "platform": "Medium",
+    "year": "2026",
+    "link": "https://medium.com/@aryanpatade8/the-hidden-carbon-cost-of-the-cloud-why-green-computing-is-the-future-of-scalable-systems-dd231e8e3c06",
+    "desc": "Explores the environmental impact of modern cloud systems and why sustainability is becoming a core pillar of software engineering. Covers energy consumption, efficient architectures, and how developers can design greener, scalable systems."
+  },
+  {
+    "id": 3,
+    "title": "Your Code Works, But Your System Doesn’t: The Missing Layer Every Developer Ignores",
+    "platform": "Medium",
+    "year": "2026",
+    "link": "",
+    "desc": "A real-world perspective on why working code doesn’t guarantee a reliable system. Breaks down the importance of system design, scalability, failure handling, and thinking beyond individual components to build production-ready software."
+  },
+  {
+    "id": 4,
+    "title": "Chandrayaan-2 Didn’t Fail—It Quietly Solved One of Space Exploration’s Biggest Problems",
+    "platform": "Medium",
+    "year": "2026",
+    "link": "https://medium.com/@aryanpatade8/chandrayaan-2-didnt-fail-it-quietly-solved-one-of-space-exploration-s-biggest-problems-b8d169194bf7",
+    "desc": "Reframes the Chandrayaan-2 mission beyond failure narratives, highlighting how its data and learnings contributed to solving critical challenges in lunar landing systems, navigation, and future mission design."
+  }
+],
   "socials": [
     { "label": "GitHub",    "href": "https://github.com/Aryan-123-app" },
     { "label": "LinkedIn",  "href": "https://www.linkedin.com/in/aryan-patade-a277451a9" },
